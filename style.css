@@ -1,0 +1,137 @@
+/*permette lo scorrimento fluido quando si utilizza la barra di navigazione per visualizzare una sezione*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*creo delle variabili per alcuni dei colori che verranno utilizzati*/
+:root{
+    --blu:rgb(8, 8, 119);
+    --rosso:rgb(172, 12, 12);
+    --fumo: whitesmoke;
+}
+
+/*imposto il tipo di font e la grandezza*/
+body{
+    margin: 0;
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*stile header contenente logo,barra di navigazione e bottone download*/
+header{
+    /*utilizzo flexbox per posizionare logo ,barra di navigazione e bottone*/
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: var(--blu);
+    /*fissa l'header in alto quando si scorre la pagina*/
+    position:sticky;
+    top:0;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 15vh;
+    
+  
+}
+
+/*imposto la larghezza della barra di navigazione e la distanza fra le sue voci*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+/*centro il contenuto delle due sezioni introduttive e imposto il padding laterale */
+.box{
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85vh;
+}
+
+/*stile sezione contenente bottone*/
+.ris{
+    padding-left: 100px;
+    padding-right: 100px;
+    /*imposto l'immagine di sfondo*/
+    background:url(img/Sfondo-Barilla.jpg) center;
+    /*evita la ripetizione dell'immagine*/
+    background-repeat: no-repeat;
+    /*fa si che copra tutto l'elemento*/
+    background-size: cover;
+    color: white;
+    height: 70vh;
+    padding-top: 100px;
+}
+
+/*stile sezioni riferite ai pilastri*/
+.pillar{
+    background-color: white;
+    padding-top: 100px;
+    padding-left: 30px;
+    height: 70vh;
+    color: var(--blu);
+}
+
+/*stile piè di pagina*/
+footer{
+    background-color: var(--blu);
+    color: white;
+    text-align: center;
+}
+
+/*imposto il colore di sfondo della sezione prodotti per ID*/
+#prodotti{
+    background-color: var(--fumo);
+}
+
+/*imposto il colore di sfondo della sezione filiere per ID*/
+#filiere{
+    background-color: var(--fumo);
+}
+
+/*imposto il colore dei titoli h1*/
+h1{
+    color: var(--blu);
+}
+
+/*imposto il colore del testo dei paragrafi*/
+p{
+    color: black;
+}
+
+/*stile del bottone per il download del report*/
+button{
+    /*arrotonda gli angoli del bottone*/
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--rosso);
+    color: white;
+    /*cambia la forma del cursore quando punta al bottone*/
+    cursor:pointer;
+    font-size: 15px;
+}
+
+/*stile delle liste*/
+ul{
+    list-style-position:inside;
+    text-align: left;
+    color: var(--blu);
+}
+
+/*stile logo*/
+.logo{
+   width:130px;
+}
+
+/*stile tag a*/
+a{
+    color: white;
+    /*rimuove la sottolineatura */
+    text-decoration:none;  
+}
+
